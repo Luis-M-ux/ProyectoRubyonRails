@@ -1,0 +1,130 @@
+<%= form_for @user do |f| %><br><br><br>
+
+<%- if @user.errors.any? %>
+    <div class="notification is-danger">
+        Oops!! parece que algo salio mal.
+    </div>
+    <% end %>
+<div class="field">
+    <%= f.label :name, class: 'label' %>
+    <div class="control"> 
+    <%= f.text_field :name, class: 'input' %>
+    </div>
+    <%- if @user.errors[:name].any? %>
+        <div class="help is-danger"> 
+            <%= @user.errors[:name].first %>
+        </div>
+    <% end %>
+</div>
+
+<div class="field">
+    <%= f.label :secondname, class: 'label' %>
+    <div class="control"> 
+    <%= f.text_field :secondname, class: 'input' %>
+    </div>
+        <%- if @user.errors[:secondname].any? %>
+        <div class="help is-danger"> 
+            <%= @user.errors[:secondname].first %>
+        </div>
+    <% end %>
+</div>
+
+<div class="field">
+    <%= f.label :surname, class: 'label' %>
+    <div class="control"> 
+    <%= f.text_field :surname, class: 'input' %>
+    </div>
+        <%- if @user.errors[:surname].any? %>
+        <div class="help is-danger"> 
+            <%= @user.errors[:surname].first %>
+        </div>
+    <% end %>
+</div>
+
+<div class="field">
+    <%= f.label :secondsurname, class: 'label' %>
+    <div class="control"> 
+    <%= f.text_field :secondsurname, class: 'input' %>
+    </div>
+        <%- if @user.errors[:secondsurname].any? %>
+        <div class="help is-danger"> 
+            <%= @user.errors[:secondsurname].first %>
+        </div>
+    <% end %>
+</div>
+
+<div class="field">
+    <%= f.label :email, class: 'label' %>
+    <div class="control"> 
+    <%= f.text_field :email, class: 'input' %>
+    </div>
+        <%- if @user.errors[:email].any? %>
+        <div class="help is-danger"> 
+            <%= @user.errors[:email].first %>
+        </div>
+    <% end %>
+</div>
+
+<div class="field">
+    <%= f.label :password, class: 'label' %>
+    <div class="control"> 
+    <%= f.text_field :password, class: 'input' %>
+    </div>
+        <%- if @user.errors[:password].any? %>
+        <div class="help is-danger"> 
+            <%= @user.errors[:password].first %>
+        </div>
+    <% end %>
+</div>
+
+<div class="field">
+    <%= f.label :password_confirmation, class: 'label' %>
+    <div class="control"> 
+    <%= f.text_field :password_confirmation, class: 'input' %>
+    </div>
+        <%- if @user.errors[:password_confirmation].any? %>
+        <div class="help is-danger"> 
+            <%= @user.errors[:password_confirmation].first %>
+        </div>
+    <% end %>
+</div>
+
+<div class="field">
+    <%= f.label :idtype, class: 'label' %>
+    <div class="control"> 
+    <%= f.text_field :idtype, class: 'input' %>
+    </div>
+        <%- if @user.errors[:idtype].any? %>
+        <div class="help is-danger"> 
+            <%= @user.errors[:idtype].first %>
+        </div>
+    <% end %>
+</div>
+
+<div class="field">
+    <%= f.label :identificationnumber, class: 'label' %>
+    <div class="control"> 
+    <%= f.text_field :identificationnumber, class: 'input' %>
+    </div>
+    <%- if @user.errors[:identificationnumber].any? %>
+        <div class="help is-danger"> 
+            <%= @user.errors[:identificationnumber].first %>
+        </div>
+    <% end %>
+</div>
+
+<div class="field">
+    <%= f.label :Age, class: 'label' %>
+    <div class="control"> 
+    <%= f.text_field :Age, class: 'input' %>
+    </div>
+    <%- if @user.errors[:Age].any? %>
+        <div class="help is-danger"> 
+            <%= @user.errors[:Age].first %>
+        </div>
+    <% end %>
+</div>
+    
+
+    <%= f.submit class: 'button is-primary' %>
+<% end %>
