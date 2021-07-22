@@ -2,6 +2,9 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.7.4'
+
+gem 'i18n', '~> 1.8', '>= 1.8.10'
+
 gem 'rubocop', '~> 1.18', '>= 1.18.3'
 
 gem 'activerecord', '~> 6.1', '>= 6.1.4'

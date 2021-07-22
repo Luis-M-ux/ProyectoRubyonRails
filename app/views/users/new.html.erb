@@ -2,11 +2,11 @@
 
 <%- if @user.errors.any? %>
     <div class="notification is-danger">
-        Oops!! parece que algo salio mal.
+        Disculpa!! parece que estas haciendo algo mal.
     </div>
     <% end %>
 <div class="field">
-    <%= f.label :name, class: 'label' %>
+    <%= f.label :name, class: 'label is-small' %>
     <div class="control"> 
     <%= f.text_field :name, class: 'input' %>
     </div>
@@ -18,7 +18,7 @@
 </div>
 
 <div class="field">
-    <%= f.label :secondname, class: 'label' %>
+    <%= f.label :secondname, class: 'label is-small' %>
     <div class="control"> 
     <%= f.text_field :secondname, class: 'input' %>
     </div>
@@ -30,7 +30,7 @@
 </div>
 
 <div class="field">
-    <%= f.label :surname, class: 'label' %>
+    <%= f.label :surname, class: 'label is-small' %>
     <div class="control"> 
     <%= f.text_field :surname, class: 'input' %>
     </div>
@@ -42,7 +42,7 @@
 </div>
 
 <div class="field">
-    <%= f.label :secondsurname, class: 'label' %>
+    <%= f.label :secondsurname, class: 'label is-small' %>
     <div class="control"> 
     <%= f.text_field :secondsurname, class: 'input' %>
     </div>
@@ -54,7 +54,7 @@
 </div>
 
 <div class="field">
-    <%= f.label :email, class: 'label' %>
+    <%= f.label :email, class: 'label is-small' %>
     <div class="control"> 
     <%= f.text_field :email, class: 'input' %>
     </div>
@@ -66,7 +66,7 @@
 </div>
 
 <div class="field">
-    <%= f.label :password, class: 'label' %>
+    <%= f.label :password, class: 'label is-small' %>
     <div class="control"> 
     <%= f.text_field :password, class: 'input' %>
     </div>
@@ -78,7 +78,7 @@
 </div>
 
 <div class="field">
-    <%= f.label :password_confirmation, class: 'label' %>
+    <%= f.label :password_confirmation, class: 'label is-small' %>
     <div class="control"> 
     <%= f.text_field :password_confirmation, class: 'input' %>
     </div>
@@ -90,7 +90,7 @@
 </div>
 
 <div class="field">
-    <%= f.label :idtype, class: 'label' %>
+    <%= f.label :idtype, class: 'label is-small' %>
     <div class="control"> 
     <%= f.text_field :idtype, class: 'input' %>
     </div>
@@ -102,7 +102,7 @@
 </div>
 
 <div class="field">
-    <%= f.label :identificationnumber, class: 'label' %>
+    <%= f.label :identificationnumber, class: 'label is-small' %>
     <div class="control"> 
     <%= f.text_field :identificationnumber, class: 'input' %>
     </div>
@@ -114,7 +114,7 @@
 </div>
 
 <div class="field">
-    <%= f.label :Age, class: 'label' %>
+    <%= f.label :Age, class: 'label is-small' %>
     <div class="control"> 
     <%= f.text_field :Age, class: 'input' %>
     </div>
@@ -126,5 +126,5 @@
 </div>
     
 
-    <%= f.submit class: 'button is-primary' %>
+    <%= f.submit class: 'button is-primary is-outlined' %>
 <% end %>

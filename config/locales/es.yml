@@ -1,0 +1,33 @@
+es:
+  Activerecord:
+    models:
+      user:
+        one: 'Usuario'
+        other: 'Usuarios'
+    attributes:
+      user:
+        name: 'Nombre'
+        secondname: 'Segundo Nombre'
+        surname: Apellido
+        secondsurname: 'Segundo Apellido'
+        email: 'Correo electronico'
+        password: 'Contraseña'
+        password confirmation: 'Confirmacion de Contraseña'
+        idtype: 'Tipo de Identificacion'
+        identificationnumber: 'Numero de Identificacion'
+        Age: 'Edad'
+    errors:
+      models:
+        user:
+          attributes:
+            name:
+              blank: 'es un campo requerido'
+            email:
+              blank: 'es un campo requerido'
+              taken: 'Este Correo ya Esta Disponible'
+            password:
+              blank: 'es un campo requerido'
+  helpers:
+    submit:
+      user:
+        create: "Guardar %{model}"
